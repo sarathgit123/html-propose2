@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For U</title>
+
+
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 3vw;
+        }
+        p{font-size: 3vw;}
+
+        div {
+            text-align: center;
+        }
+
+        .marquee-container {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.marquee {
+    display: inline-block;
+    padding-left: 100%; /* Initial padding to start the animation off screen */
+    animation: marquee 40s linear infinite; /* Increased duration for slower scroll */
+    font-size: 3vw;
+    color: red;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 600px) {
+    .marquee {
+        animation-duration: 20s; /* Adjusted duration for smaller screens */
+    }
+}
+iframe{ border: none;
+    background: pink;}
+    .button{
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    }
+  
+    </style>
+</head>
+
+<body>
+    <h1> I Think You Need To Hear This Before It's Too Late.....</h1>
+    <div>
+        <iframe name="love" height="400vh" width="400vw">
+        </iframe>
+        <br>
+        <a href="../assets/images/i.jpeg" target="love" > <button>I</button> </a> <br>
+        <a href="../assets/images/l.jpeg" target="love"> <button >L</button> </a>
+        <a href="../assets/images/o.jpeg" target="love"> <button >O</button></a>
+        <a href="../assets/images/v.jpeg" target="love"> <button >V</button></a>
+        <a href="../assets/images/e.jpeg" target="love"> <button >E</button></a>
+        <br>
+        <a href="../assets/images/you.jpeg" target="love"> <button class="btn6" >You</button> </a>
+        <div class="marquee-container">
+            <div class="marquee">
+                <div class="marquee-container">
+                    <div class="marquee">
+                        <p>Take A Break From worrying About What You Can't Control Live A Little!</p>
+                    </div>
+                </div>
+                </p>
+            </div>
+        </div>
+       
+        <iframe src="../assets/audio/The Love Bug Has Bitten (Background Score) (1).mp3" allow="autoplay" id="audio"  style="display: none" frameborder="0"></iframe>
+     <audio id="player" autoplay loop> 
+
+        <source src="../assets/audio/The Love Bug Has Bitten (Background Score) (1).mp3">
+     </audio>
+
+    </div>
+</body>
+
+</html>

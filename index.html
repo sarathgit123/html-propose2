@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div { text-align: center;}
+        fieldset{
+  border: 1px solid rgb(255, 57, 57);
+  width: 400px;
+  margin:auto;
+}
+
+    </style>
+</head>
+<body>
+<div>
+  
+       
+   
+   <fieldset>
+    <legend><h1>Fill Me  </h1> </legend>
+    <form>
+ <label for="fname" >  <b> Name </b></label>
+ <input type="text" id="fname" name="First_name" required/> <br> <br>
+<label for="tel"> <b> Phone Number </b> </label>
+<input type="tel" name="tel"  pattern="[0-9]{10}" required/> <br> <br>
+<label for="date"> <b>Date Of Birth </b>  </label>
+<input type="date" id="date" name="date" required /> <br> <br>
+ <label for=""> <b>Select your favorite color  </b></label>
+        <input name="clr" type="radio" id="clr1" value="white"> <label for="clr1"> White</label> 
+        <input name="clr" type="radio" id="clr2" value="black"> <label for="clr2"> Black</label> 
+         <br> <br>
+
+        <input type="submit" formaction="./public/love.html" value="submit"> <br> <br>
+
+    </form>
+    </fieldset> 
+</div>
+    
+</body>
+</html>
